@@ -1,0 +1,168 @@
+<head>
+    <link rel="icon" href="assets/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title> My Personal Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/bootstrap-icons.css">
+   <!-- <link rel="stylesheet" href="styles/bootstrap.min.css">-->
+
+</head>
+<body>
+    <header> 
+        <a href="#" class="logo"> Portfolio</a>
+        <div class="toggle" onclick="toggleMenu();"> </div>
+        <ul class=" menu">
+            <li><a  class= "bi bi-house-door" href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a  class="bi bi-file-person" href="#about" onclick="toggleMenu();">About</a></li>
+           
+            <li><a class= "bi bi-code-slash" href="#skills" onclick="toggleMenu();">Skills</a></li>
+            <li><a  class="bi bi-envelope" href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h2> Hello, I'm<br><span>Oside Saleh.</span></h2>
+            <h3> I'm a Computer Science Student.</h3>
+            <a href="#about"class="btn">About Me</a>
+        </div>
+    </section>
+    <section class= "about" id="about">
+        <div class="heading ">
+            <h2>About Me</h2>
+        </div>
+        <div class="content"> 
+            <div class="contentBx w50">
+                <h3>I'm a Computer Science Student.</h3>
+                <p>I'm a senior graduating in May 2021. I was born in New Jersey, but I'm originally from Palestine and raised in Jordan.
+                     I speak three languages English, Arabic, and Spanish. I'm mainly looking for an Internship or a Full- Time job.
+                       I have experience in Java, C, HTML, CSS, SQL. </p>
+            </div>
+            <div class="w50" class="img">
+            <img src="assets/explore.jpeg" >
+            </div>
+        </div>
+
+    </section>
+    <section class="skills" id="skills">
+        <div class="heading">
+            <h2>My Skills</h2>
+            <p>This is a list of my professional skills and programs. </p>
+        </div>
+        <div class="content">
+            <div class="skillsBx">
+                <img src="assets/icon1.png">
+                <h2>Web Design</h2>
+                <p>I have experience in web design using HTML,CSS and Java Script.</p>
+            </div>
+                    <div class="content">
+                        <div class="skillsBx">
+                            <img src="assets/icon3.png">
+                            <h2>Game Devlopment</h2>
+                            <p> I have experience in Game Dev using Game Maker and Unity.</p>
+                        </div>
+                        <div class="content">
+                            <div class="skillsBx">
+                                <img src="assets/icon3.jpg">
+                                <h2>Phone Technician</h2>
+                                <p>I have experience in fixing hardware on smart phones</p>
+                            </div>
+        </div>
+    </section>
+
+    <section class="work" id="work">
+        <div class="heading">
+          <!-- <h2 class="black" >My Latest Work</h2>-->
+           <!-- <p class="black" >Here you can see my latest work </p>-->
+            <hr>
+            <h2 class='display-6'>Skills:</h2>
+            <div class="d-flex row row-cols-5">
+               
+                <img src='assets/CSS.png'>
+                <img src='assets/HTML.png'>
+                <img src='assets/Java.jpg'>
+                <img src='assets/C.png'>
+                <img src='assets/Gamemaker.png'>
+                <img src='assets/unity.png'>
+                </div>
+             </div>
+        </div>
+<div class="content">
+    <div class="workBx">
+    </div>
+</div>
+<div class="heading">
+    <a href="#" class="btn"> View More</a>
+</div>
+    </section>
+    <section class="contact" id="contact">
+            <div class="heading white">
+                <h2>Contact Us</h2>
+                <p>This is where you can contact us if you have any questions or concerns. </p>
+                </div>
+                <div class="content">
+                    <div class="contantInfoBox">
+                        <h3 class= white> Contact Info</h3>
+                        <div class="contactInfoBx">
+                            <div class="box">
+                                <div class="icon">
+                                    <i class="fa fa-map-marker"></i>
+                                </div>
+                                     <div class="text">
+                                     <h3 class= white> Address</h3>
+                                     <p> 2271 Telestar St,</p>
+                                     <p>Gretna, Louisiana,</p>
+                                     <p>70058</p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="icon">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                     <div class="text">
+                                     <h3 class= white> Phone</h3>
+                                     <p> 504-491-9386</p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="icon">
+                                    <i class="fa fa-envelope-o"></i>
+                                </div>
+                                     <div class="text">
+                                     <h3 class= white> E-mail</h3>
+                                     <p>Oasaleh@uno.edu</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="formbx">
+                        <form>
+                            <h3>Message Me</h3>
+                            <input type="text" name="" placeholder="Full Name">
+                            <input type="email" name="" placeholder="Email">
+                            <textarea placeholder="Your Message"></textarea>
+                            <input type="submit" value="Send">
+                        </form>
+                    </div>
+                </div>
+    </section>
+<div class="copyright">
+    <p> Copyright  © 2021 Oside Saleh. All Right Reserved.</p>
+</div>
+    <script type="text/javascript">
+    window.addEventListener('scroll',function()
+{
+    var header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 0);
+});
+function toggleMenu(){
+    var menuToggle= document.querySelector('.toggle');
+    var menu= document.querySelector('.menu');
+    menuToggle.classList.toggle('active');
+    menu.classList.toggle('active');
+}
+    </script>
+     <!-- Bootstrap Bundle with Popper -->
+     <script src="scripts/bootstrap.bundle.min.js"></script>
+</body>
