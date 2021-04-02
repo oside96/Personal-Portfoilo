@@ -12,6 +12,9 @@ section{
     padding:100px;
 
 }
+.about{
+    background: #111;
+}
 .banner{
     position: relative;
     min-height: 100vh;
@@ -36,7 +39,7 @@ line-height: 1.4em;
 color:#fff;
 font-weight: 500; 
 }
-.btn{
+.btns{
     position: relative;
     background: #2196f3;
     display: inline-block;
@@ -118,6 +121,7 @@ color: #2196f3;
 .contentBx h3{
 font-size: 24px;
 margin: 10px;
+color: white;
 }
 .w50{
     min-width: 50%;
@@ -130,7 +134,7 @@ img{
 }
 .heading {
 
-    color: #fff;
+    color: #111;
 }
 .skills .content{
 display: flex;
@@ -150,6 +154,7 @@ flex-direction: row;
 .skills .content .skillsBx:hover{
     background: #2196f3;
 }
+
 .skills .content .skillsBx img{
     max-width: 80px;
     filter: invert(1);
@@ -313,7 +318,7 @@ filter: invert(1);
     .banner h3{
         font-size: 1em;
     }
-    .btn{
+    .btns{
         margin: 10px;
         padding: 10px 20px;
         font-size: 16px;
